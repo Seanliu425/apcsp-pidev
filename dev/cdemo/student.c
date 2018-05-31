@@ -8,7 +8,7 @@ struct Students {
 	int studentid;
 };
 void printStudent(struct Students* student);
-void studentmain()
+int main()
 {
   struct Students StudentArr[2];
   char input[256] ;
