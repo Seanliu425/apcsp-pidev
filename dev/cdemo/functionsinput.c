@@ -33,20 +33,19 @@ int main(int argc, char* argv[])
 		if (sscanf(input, "%f", &high) == 1) break;
 		printf("Not a valid number - try again!\n");
 	}
-	if (&low > &high)
+//	while (arg < argc)
+	if (low > high)
 	{
 		float swap = high;
-		float high = low;
-		float low = swap;
+		high = low;
+		low = swap;
 	}
-	while (arg < argc)
+	for (float a = low; a < high + 1; a++)
 	{
-		for (float a = low; a < high + 1; a++)
-		{
-			r = areaOfCircle(a);
-			printf("Area of Circle = %f\n",r);
-			arg ++;
-	        }
+		r = areaOfCircle(a);
+		printf("Area of Circle = %f\n",r);
+		arg ++;
 	}
+	
 
 }

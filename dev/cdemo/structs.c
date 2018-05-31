@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "student.h"
 struct Students {
 	char  firstname[50];
 	char  lastname[50];
